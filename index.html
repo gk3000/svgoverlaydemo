@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <title>Document</title>
+</head>
+
+<body>
+  <header>
+    <svg class="overlay" viewBox="0 0 100 100" preserveAspectRatio="xMidYMid slice">
+      <defs>
+        <mask id="invertMask">
+          <rect width="100%" height="100%" fill="white" />
+          <!-- Center and scale without distortion -->
+          <image href="Logo/Simple.svg" width="100%" height="100%" preserveAspectRatio="xMidYMid meet" style="transform-box: fill-box;
+                 transform-origin: center;
+                 transform: translateY(-0%);" />
+        </mask>
+      </defs>
+
+      <rect width="100%" height="100%" fill="white" mask="url(#invertMask)" />
+    </svg>
+    <!-- <img
+        id="mascaraSVG"
+        class="styleLogoSVG"
+        src="Logo/Simple.svg"
+        alt="Ícone SVG"
+        width="100"
+        height="100"
+      /> -->
+  </header>
+  <main>
+    <nav></nav>
+    <section id="thumbnails"></section>
+    <section id="brands"></section>
+  </main>
+
+  <aside>
+    <div id="sorting">
+      <button id="linear">Linear</button><button id="random">Random</button>
+    </div>
+    <div id="logos">
+      <button id="brand">Brand</button>
+      <button id="company">Company</button>
+    </div>
+    <div id="autoPlay">
+      <button id="enablePlay">AutoPlay</button>
+      <input id="secondsPlay" />
+    </div>
+
+    <div id="companyLogos"></div>
+    <div id="brandLogos"></div>
+  </aside>
+
+  <script src="script.js"></script>
+</body>
+
+</html>

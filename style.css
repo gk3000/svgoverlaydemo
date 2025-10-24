@@ -1,0 +1,228 @@
+img {
+  width: 100%;
+}
+
+
+
+header {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+header video {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  object-fit: cover;
+}
+
+video::-webkit-media-controls {
+  display: none !important;
+  -webkit-appearance: none;
+}
+
+.overlay {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 1;
+}
+
+
+
+#companyLogos img,
+#brandLogos img {
+  width: 4vw;
+}
+
+main {
+  width: 100vw;
+  height: 60vh;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* background-color: blue; */
+}
+
+header {
+  width: 100vw;
+  height: 40vh;
+  background-color: rgb(255, 0, 212);
+  overflow: hidden;
+}
+
+aside {
+  position: fixed;
+  right: -100vw;
+  top: 0;
+
+  width: 100vw;
+  height: 100vh;
+
+  background-color: rgb(87, 87, 87);
+  transition: right 1s;
+  z-index:2;
+}
+
+.styleVideo {
+  height: -webkit-fill-available;
+  width: -webkit-fill-available;
+  max-height: 100%;
+  max-width: 100%;
+  margin: 0 auto;
+  display: block;
+}
+
+.openSettings {
+  right: 0vw;
+  transition: right 1s;
+}
+
+section#thumbnails {
+  display: flex;
+  overflow: scroll;
+  width: 100vw;
+  height: 24vh;
+
+  scrollbar-width: none;
+  /* left: calc(4--); */
+}
+
+section#thumbnails img {
+  width: auto;
+
+  margin: 7px 7px;
+  border-radius: 7px;
+}
+
+nav,
+#brands {
+  text-align: center;
+}
+
+#brands {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin: 10px 0px;
+
+  height: 7vh;
+  scrollbar-width: none;
+
+  overflow: scroll;
+  width: 100vw;
+}
+
+#brands img {
+  height: 100%;
+  width: auto;
+  margin: 7px;
+}
+
+nav span {
+  display: inline-block;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 24px;
+  margin: 36px 20px;
+}
+
+.disabelCategory {
+  opacity: 30%;
+}
+
+.disableLogo {
+  filter: grayscale();
+  opacity: 70%;
+}
+
+.modalContainer {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+
+  backdrop-filter: blur(14px);
+}
+
+.modal {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  width: calc(100vw - 40px);
+  height: calc(100vh - 40px);
+  border-radius: 11px;
+
+  overflow: hidden;
+}
+
+.modalCloseIcon {
+  position: fixed;
+  right: 33px;
+  top: 33px;
+  z-index: 1;
+  z-index: 11;
+}
+
+.styleImageContainer {
+  height: 100%;
+  width: 100%;
+  border-radius: inherit;
+}
+
+.styleImageContainer img {
+  object-fit: cover;
+  object-position: center;
+  border-radius: inherit;
+
+  min-height: 100%;
+  min-width: 100%;
+}
+
+.styleBulletContainer {
+  position: fixed;
+  right: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+  z-index: 10;
+}
+
+.styleBullet a {
+  text-decoration: none;
+  color: black;
+}
+
+a.selectedBullet {
+  text-decoration: none;
+  color: #ccc;
+}
+
+.buttonDisable {
+  opacity: 30%;
+}
+
+#sorting,
+#logos,
+#autoPlay {
+  display: flex;
+  justify-content: center;
+}
+
+button {
+  border-radius: 7px;
+  font-size: 32px;
+  font-family: tahoma;
+  font-weight: 400;
+  padding: 8px 40px;
+}
+/* .buttonEnable {
+  opacity: 100%;
+} */
