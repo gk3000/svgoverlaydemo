@@ -86,14 +86,14 @@ aside {
   z-index: 2;
 }
 
-/* .styleVideo {
+.styleVideo {
   height: -webkit-fill-available;
   width: -webkit-fill-available;
   max-height: 100%;
   max-width: 100%;
   margin: 0 auto;
   display: block;
-} */
+}
 
 .openSettings {
   right: 0vw;
